@@ -28,6 +28,14 @@ function createLogger() {
 }
 
 /**
+ * Logs a error from a connection side.
+ */
+function logErrorFromConnection(side: string, error: Error, logger: Ise) {
+    logger.log('error', `The ${side} errored.`)
+    logger.log('error', `Reason: ${error.message}`)
+}
+
+/**
  * Checks for the system requirements.
  */
 function environmentCheck(): boolean {
@@ -38,4 +46,5 @@ export default {
     getTargetAddress,
     createLogger,
     environmentCheck,
+    logErrorFromConnection,
 }

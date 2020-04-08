@@ -24,6 +24,22 @@ server.on('connection', (socket: Socket) => {
 
     socket.on('data', (data: Buffer) => targetServer.write(data))
     targetServer.on('data', (data: Buffer) => socket.write(data))
+
+    socket.on('error', (error: Error) => {
+        utils.logErrorFromConnection('client', error, logger)
+
+        // Close all connections.
+        socket.destroy()
+        targetServer.destroy()
+    })
+
+    targetServer.on('error', (error: Error) => {
+        utils.logErrorFromConnection('client', error, logger)
+
+        // Close all connections.
+        socket.destroy()
+        targetServer.destroy()
+    })
 })
 
 server.listen(MITM_PORT, () => {
