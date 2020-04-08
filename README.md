@@ -6,6 +6,7 @@ Trying to lag a TCP connection with some magic.
 
 This project contains TypeScript files.
 
+- If you'd like to compile it to get a optimized source code, just follow [getting started](#getting-started) section.
 - If you'd like to run directly instead of compiling you can install `typescript` and `ts-node`.
 
 ```sh
@@ -15,8 +16,6 @@ npm i -g typescript ts-node
 # Yarn
 yarn global add typescript ts-node
 ```
-
-- If you'd like to compile it to get a optimized source code, just follow [getting started](#getting-started) section.
 
 #### Getting Started
 
