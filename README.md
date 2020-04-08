@@ -28,7 +28,7 @@ Then, compile it and run by running.
 yarn build && yarn start
 ```
 
-> if you have installed `ts-node`, you can run it directly with the source folder as input.
+> If you have installed `ts-node`, you can run it directly with the source folder as input.
 > ```sh
 > ts-node src
 > ```
