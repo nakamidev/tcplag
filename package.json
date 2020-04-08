@@ -1,5 +1,9 @@
 {
     "private": true,
+    "scripts": {
+        "start": "node dist",
+        "build": "tsc"
+    },
     "dependencies": {
         "dotenv": "^8.2.0",
         "ise": "^0.0.1",
