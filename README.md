@@ -24,11 +24,8 @@ yarn
 Then, compile it and run by running.
 
 ```sh
-# Compiling
-yarn build
-
-# Running
-yarn start
+# Compiling & Running
+yarn build && yarn start
 ```
 
 > if you have installed `ts-node`, you can run it directly with the source folder as input.
