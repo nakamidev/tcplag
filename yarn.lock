@@ -11,3 +11,13 @@ dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+
+ise@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/ise/-/ise-0.0.1.tgz#f2966d3176c2d950d3e19130b05ec64c1211afd6"
+  integrity sha512-jKTuVkh2+gtTGIoVES+82UiiA2iO3Cyu614Mzp5JL5T7e3+NtfXALWnYORYCOXqIR1ULLG9tbM2aXvOHtUEprg==
+
+kleur@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
+  integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
