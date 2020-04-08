@@ -1,8 +1,12 @@
 {
-  "devDependencies": {
-    "@types/node": "^13.11.0"
-  },
-  "dependencies": {
-    "dotenv": "^8.2.0"
-  }
+    "private": true,
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "ise": "^0.0.1",
+        "kleur": "^3.0.3"
+    },
+    "devDependencies": {
+        "@types/node": "^13.11.0",
+        "typescript": "^3.8.3"
+    }
 }
