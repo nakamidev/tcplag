@@ -6,6 +6,7 @@
     },
     "dependencies": {
         "dotenv": "^8.2.0",
+        "iohook": "^0.6.5",
         "ise": "^0.0.1",
         "kleur": "^3.0.3"
     },
