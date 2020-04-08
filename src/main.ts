@@ -27,19 +27,16 @@ server.on('connection', (socket: Socket) => {
 
     socket.on('error', (error: Error) => {
         utils.logErrorFromConnection('client', error, logger)
-
-        // Close all connections.
-        socket.destroy()
-        targetServer.destroy()
+        utils.closeConnections(socket, targetServer)
     })
 
     targetServer.on('error', (error: Error) => {
         utils.logErrorFromConnection('client', error, logger)
-
-        // Close all connections.
-        socket.destroy()
-        targetServer.destroy()
+        utils.closeConnections(socket, targetServer)
     })
+
+    socket.on('end', () => utils.closeConnections(socket, targetServer))
+    targetServer.on('end', () => utils.closeConnections(socket, targetServer))
 })
 
 server.listen(MITM_PORT, () => {

@@ -1,4 +1,6 @@
 import { Ise, Transports } from 'ise'
+import { Socket } from 'net'
+
 import kleur from 'kleur'
 
 const { ConsoleTransport, DEFAULT_COLORS } = Transports.Console
@@ -42,9 +44,17 @@ function environmentCheck(): boolean {
     return !!(process.env.MITM_PORT && process.env.TARGET_ADDRESS)
 }
 
+/**
+ * A function to close TCP connections.
+ */
+function closeConnections(...sockets: Socket[]) {
+    sockets.map((socket) => socket.destroy())
+}
+
 export default {
     getTargetAddress,
     createLogger,
     environmentCheck,
     logErrorFromConnection,
+    closeConnections,
 }
